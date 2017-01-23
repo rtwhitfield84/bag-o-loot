@@ -1,0 +1,19 @@
+DELETE FROM toy;
+DELETE FROM child;
+
+DROP TABLE IF EXISTS toy;
+DROP TABLE IF EXISTS child;
+
+create table child (
+	childId INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+	name TEXT NOT NULL,
+	happy INT NOT NULL,
+	CONSTRAINT name_unique UNIQUE (name)
+	);
+	
+	create table toy (
+	toyId INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+	name TEXT NOT NULL,
+	childId INTEGER NOT NULL,
+	FOREIGN KEY(`childId`) REFERENCES `child`(`childId`)
+	);
