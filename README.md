@@ -2,13 +2,6 @@
 
 This exercises will help with your comprehension of [command line parameters](http://www.pythonforbeginners.com/argv/more-fun-with-sys-argv).
 
-## Setup
-
-```
-mkdir -p ~/workspace/python/exercises/cli && cd $_
-touch lootbag.py
-```
-
 ## Instructions
 
 You have an acquaintance whose job is to, once a year, delivery presents to the best kids around the world. They have a problem, though. There are so many good boys and girls in the world now, that their old paper accounting systems just don't cut it anymore. They want you to write a program that will let them do the following tasks.
